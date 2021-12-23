@@ -3,10 +3,10 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2020-06-22T00:23:56Z",
+  "updated": "2021-12-23T06:22:04Z",
   "id": "myoutsystems.github.io",
   "duration": 0,
-  "title": "Python Resources",
+  "title": "Outsystems Resources",
   "authors": "TAN KOK CHENG",
   "summary": "Out Systems Guide",
   "source": "1xnJiicz10ExBhIR_aGzgCJeC2ZJIMlbB2WOKlmOrmsY",
@@ -22,6 +22,5 @@
     "web"
   ],
   "feedback": "https://myoutsystems.github.io",
-  "ga": "UA-166036181-1",
   "url": "myoutsystems.github.io"
 }

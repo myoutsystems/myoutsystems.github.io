@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <meta name="theme-color" content="#4F7DC9">
   <meta charset="UTF-8">
-  <title>Python Resources</title>
+  <title>Outsystems Resources</title>
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
@@ -21,151 +21,584 @@
 </head>
 <body>
   <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
-  <google-codelab codelab-gaid="UA-166036181-1"
+  <google-codelab codelab-gaid=""
                   id="myoutsystems.github.io"
-                  title="Python Resources"
+                  title="Outsystems Resources"
                   environment="web"
                   feedback-link="https://myoutsystems.github.io">
     
       <google-codelab-step label="Introduction to Outsystems" duration="0">
-        <p>Sample for survey</p>
-<google-codelab-survey survey-id="myoutsystems.github.io-1">
-<h4>What do you like about python?</h4>
-<paper-radio-group>
-<paper-radio-button>Easy to learn</paper-radio-button>
-<paper-radio-button>Powerful</paper-radio-button>
-<paper-radio-button>Free</paper-radio-button>
-</paper-radio-group>
-</google-codelab-survey>
-<p>I am placing a repl iframe here</p>
-<iframe class="youtube-video" src="https://repl.it/@kokcheng/01-Files"></iframe>
-<p>End of repl iframe here</p>
-<p>Youtube video here</p>
-<table>
-<tr><td colspan="1" rowspan="1"><p><strong>Description</strong></p>
-</td></tr>
-<tr><td colspan="1" rowspan="1"><p>Passing Data</p>
-<ul>
-<li>Pass data from VCA to VCB</li>
-<li>Use prepare(for:sender:)</li>
-</ul>
-</td></tr>
-<tr><td colspan="1" rowspan="1"><iframe class="youtube-video" src="https://www.youtube.com/embed/E0yFkbmO3No?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</td></tr>
-</table>
-<p><a href="https://youtu.be/E0yFkbmO3No" target="_blank">https://youtu.be/E0yFkbmO3No</a></p>
-<p>Sample for warning</p>
-<aside class="warning"><ul>
-<li>Technical – 30%</li>
-<li>Concept and Approach – 30%</li>
-<li>Creativity and Uniqueness – 30%</li>
-<li>Presentation – 10%</li>
-</ul>
-</aside>
+        <p class="image-container"><img style="width: 601.70px" src="img\813c1ef460a6d4a4.png"></p>
+<p>Camera plugin</p>
+<p><a href="https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=1390&ProjectName=camera-plugin" target="_blank">https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=1390&amp;ProjectName=camera-plugin</a></p>
 
 
       </google-codelab-step>
     
-      <google-codelab-step label="Create Project" duration="0">
-        <aside class="special"><p>Library required: openpyxl</p>
+      <google-codelab-step label="Create Mobile App (2.3x)" duration="0">
+        <p>Key topics</p>
+<table>
+<tr><td colspan="1" rowspan="1"><p>No</p>
+</td><td colspan="1" rowspan="1"><p>Key Topics</p>
+</td><td colspan="1" rowspan="1"><p>Description</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>1</p>
+</td><td colspan="1" rowspan="1"><p>Create mobile app</p>
+</td><td colspan="1" rowspan="1"><p>Add Icon</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>2</p>
+</td><td colspan="1" rowspan="1"><p>Create <strong>Blank </strong>module</p>
+</td><td colspan="1" rowspan="1"><p>No UI</p>
+<p>Core Module</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>3</p>
+</td><td colspan="1" rowspan="1"><p>Create <strong>Mobile</strong> module</p>
+</td><td colspan="1" rowspan="1"><p>With UI</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>4</p>
+</td><td colspan="1" rowspan="1"><p>1-Click Publish</p>
+</td><td colspan="1" rowspan="1"><p>Big Green Icon in top center of IDE</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>5</p>
+</td><td colspan="1" rowspan="1"><p>In Core module, create <strong>Client</strong> Action</p>
+</td><td colspan="1" rowspan="1"><p>Switch to Logic tab</p>
 <ul>
-<li><strong>Installation</strong>: pip install openpyxl</li>
-<li><strong>Documentation</strong>: <a href="https://openpyxl.readthedocs.io/en/stable/index.html" target="_blank">https://openpyxl.readthedocs.io/en/stable/index.html</a> </li>
+<li>Client Action: GetAppName() </li>
+<li>Add <strong>Output </strong>parameter</li>
+<li>Assign &#34;To Do&#34; to the Output parameter</li>
+<li>Set <strong>Action </strong>to <strong>Public</strong></li>
+<li>Set <strong>Function </strong>property to <strong>Yes</strong></li>
 </ul>
-</aside>
-<p><strong>Use Case: Create Excel File</strong></p>
-<p>This can be broken down into the following steps:</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>6</p>
+</td><td colspan="1" rowspan="1"><p>In Todo Mobile module, add <strong>dependency</strong></p>
+</td><td colspan="1" rowspan="1"><p>Search for the Todo_Core module, and select the <strong>GetAppName</strong> Client Action</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>7</p>
+</td><td colspan="1" rowspan="1"><p>Create New Screen</p>
+</td><td colspan="1" rowspan="1"><p>Select <strong>Empty</strong> template</p>
+<ul>
+<li>Name as <strong>HomeScreen</strong></li>
+</ul>
+<p>Add Expression to screen</p>
+<ul>
+<li>Set expression to &#34;Hello from &#34; + GetAppName() + &#34; app&#34;. </li>
+</ul>
+</td></tr>
+</table>
+<h4 is-upgraded>Create New User</h4>
+<table>
+<tr><td colspan="1" rowspan="1"><p>No</p>
+</td><td colspan="1" rowspan="1"><p>Key Topics</p>
+</td><td colspan="1" rowspan="1"><p>Description</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>1</p>
+</td><td colspan="1" rowspan="1"><p>Create New User</p>
+</td><td colspan="1" rowspan="1"><p>To create users</p>
+<p><a href="https://kokcheng.outsystemscloud.com/Users" target="_blank">https://kokcheng.outsystemscloud.com/Users</a></p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>2</p>
+</td></tr>
+</table>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Create Database Storage (3.4)" duration="0">
+        <p>Key topics</p>
+<table>
+<tr><td colspan="1" rowspan="1"><p>No</p>
+</td><td colspan="1" rowspan="1"><p>Key Topics</p>
+</td><td colspan="1" rowspan="1"><p>Description</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>1</p>
+</td><td colspan="1" rowspan="1"><p>Create Entity</p>
+</td><td colspan="1" rowspan="1"><p>Go to <strong>Data</strong> tab</p>
+<p>Click on More... → More Options </p>
+<ul>
+<li>To change the Plural Label</li>
+</ul>
+<p>Setting <strong>UserId </strong>as Attribute Name, the system will automatically set the Data Type to &#34;<strong>User Identifier</strong>&#34; </p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>2</p>
+</td><td colspan="1" rowspan="1"><p>The Delete Rule</p>
+</td><td colspan="1" rowspan="1"><p>The Delete Rule property allows to specify the behavior when we, in this case, delete a User. </p>
+<ul>
+<li>When set to <strong>Protect </strong>, if a To Do exists for a particular user, it is not possible to delete the User without first deleting all its To Dos.</li>
+<li>When set to <strong>Delete </strong>, deleting a User also deletes all To Dos for that particular user.</li>
+<li>When set to <strong>Ignore </strong>, deleting a user will leave the To Dos orphaned in the ToDo Entity.</li>
+</ul>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>3</p>
+</td><td colspan="1" rowspan="1"><p>Date</p>
+</td><td colspan="1" rowspan="1"><p><strong>CurrDate()</strong> function can be used to get current date.</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>4</p>
+</td><td colspan="1" rowspan="1"><p>Import Entities from Excel</p>
+</td><td colspan="1" rowspan="1"><p>Data from excel file</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>5</p>
+</td><td colspan="1" rowspan="1"><p>Create Static Entity</p>
+</td><td colspan="1" rowspan="1"><p>Add record</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>6</p>
+</td><td colspan="1" rowspan="1"><p>Binary Content</p>
+</td><td colspan="1" rowspan="1"><p>Choose the <strong>Binary Data</strong> Data Type</p>
+<ul>
+<li>For Image</li>
+</ul>
+</td></tr>
+</table>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="List &amp; Detail Screens (4.4)" duration="0">
+        <p>Key topics</p>
+<table>
+<tr><td colspan="1" rowspan="1"><p>No</p>
+</td><td colspan="1" rowspan="1"><p>Key Topics</p>
+</td><td colspan="1" rowspan="1"><p>Description</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>1</p>
+</td><td colspan="1" rowspan="1"><p>Create Aggregate</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>2</p>
+</td><td colspan="1" rowspan="1"><p>Current User</p>
+</td><td colspan="1" rowspan="1"><p>Function to get current userid</p>
+<ul>
+<li>GetUserId()</li>
+</ul>
+<p>NullIdentifier() ← if user is not authenticated</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>3</p>
+</td><td colspan="1" rowspan="1"><p>Date</p>
+</td><td colspan="1" rowspan="1"><p><strong>CurrDate()</strong> function can be used to get current date.</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>4</p>
+</td><td colspan="1" rowspan="1"><p>Import Entities from Excel</p>
+</td><td colspan="1" rowspan="1"><p>Data from excel file</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>5</p>
+</td><td colspan="1" rowspan="1"><p>Create Static Entity</p>
+</td><td colspan="1" rowspan="1"><p>Add record</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>6</p>
+</td><td colspan="1" rowspan="1"><p>Binary Content</p>
+</td><td colspan="1" rowspan="1"><p>Choose the <strong>Binary Data</strong> Data Type</p>
+<ul>
+<li>For Image</li>
+</ul>
+</td></tr>
+</table>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Functions you can use" duration="0">
+        <table>
+<tr></tr>
+<tr><td colspan="1" rowspan="1"><p>Date Time</p>
+</td><td colspan="1" rowspan="1"><p><code>Convert Date/Time object to Date</code></p>
+<p><code>DateTimeToDate(EntityTest.DateTime) = CurrDate()</code></p>
+<p>CurrDateTime() ← another variant of CurrDate()</p>
+<p>get datetime that are bigger than today at 00:00:00 and previous to tomorrow at &#34;00:00:00&#34;:</p>
+<p><code>EntityTest.DateTime &gt;= BuildDateTime(CurrDate(), #00\:00\:00#) and EntityTest.DateTime &lt; BuildDateTime(AddDays(CurrDate(), 1), #00\:00\:00#)</code></p>
+</td></tr>
+</table>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Firebase (Resources)" duration="0">
+        <p><a href="https://www.slideshare.net/OutSystems/realtime-performed-at-scale-with-firebase-outsystems" target="_blank">https://www.slideshare.net/OutSystems/realtime-performed-at-scale-with-firebase-outsystems</a></p>
+<p><a href="https://wwdtp10-dev.outsystemsenterprise.com/FirestoreClipboard/" target="_blank">https://wwdtp10-dev.outsystemsenterprise.com/FirestoreClipboard/</a></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Handling Warning Message" duration="0">
+        <table>
+<tr><td colspan="1" rowspan="1"><p>Security Warning</p>
+</td><td colspan="1" rowspan="1"><p>You&#39;re exposing a database operation in the client side. Validate the data in a Server Action before changing the database.</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Solution</p>
+</td><td colspan="1" rowspan="1"><p>Create a server action, do the database action in the server side.</p>
+<p>[refer to TT Booking]</p>
+</td></tr>
+</table>
+<table>
+<tr><td colspan="1" rowspan="1"><p>Security Warning</p>
+</td><td colspan="1" rowspan="1"><p>You&#39;re exposing a database operation in the client side. Validate the data in a Server Action before changing the database.</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Solution</p>
+</td><td colspan="1" rowspan="1"><p>Create a server action, do the database action in the server side.</p>
+<p>[refer to TT Booking]</p>
+</td></tr>
+</table>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Expose Web Service" duration="0">
+        <p>Refer to Jumpstart Exercise for Web: Page 25</p>
+<p>Steps:</p>
+<p>Go to Logic Tab</p>
+<ul>
+<li>Under Integrations → REST → Expose REST API</li>
+<li>Add New API → Add REST API Method</li>
+<li>Add Output Parameter, set to appropriate data type</li>
+<li>Double-Click the method to design its logic</li>
+<li>Assign values to the Output Parameter </li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Consume Web Service" duration="0">
+        <h4 is-upgraded>Using HTTP post with WS</h4>
+<p><strong>Step 1:</strong></p>
+<p>The webservice that I have created is in the ws folder, the file is add.php</p>
+<p><a href="http://fyp2019.trytocode.com/ws/add.php" target="_blank">http://fyp2019.trytocode.com/ws/add.php</a></p>
+<p>Read the add.php file to see what input and output is taken by the php file. </p>
+<p><strong>Step 2:</strong></p>
+<p>When you add the web service, do the following:</p>
+<p>Change HTTP method to POST</p>
+<p>Request:</p>
+<p>name=peter&amp;age=1&amp;gender=Male    ← this is the test data</p>
+<p>Response:</p>
+<p>Result returned in this case is just a normal text</p>
+<p class="image-container"><img style="width: 601.70px" src="img\f2db3bab8ee4095b.png"></p>
+<p class="image-container"><img style="width: 466.69px" src="img\e3ca9cf05e401ce0.png"></p>
+<p>Take note of the Request Format and the Response Format. The Webservice that you have practiced are all set as JSON. </p>
+<p>In my case, my Request Format is Form URL Encoded</p>
+<p>My Reponse Format is just &#34;Plain Text&#34;. </p>
+<p>User interface Design</p>
+<p>I create 3 local variables: name, age and gender</p>
+<p class="image-container"><img style="width: 324.65px" src="img\cf65452d5478eeda.png"></p>
+<p>The 3 input variables are set to name, age and gender respectively.</p>
+<p class="image-container"><img style="width: 601.70px" src="img\b5bd62625492c4d.png"></p>
+<p>(this is just a sample to show you the variable is set to name. Do the same for the age and gender. </p>
+<p>For the button click, this is the picture:</p>
+<table>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 124.18px" src="img\d289841894d6c7d0.png"></p>
+</td><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 397.00px" src="img\8218185d8d60c872.png"></p>
+</td></tr>
+</table>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="LTA Web Service" duration="0">
+        <p>bus-stop : 46269</p>
+<table>
+<tr><td colspan="1" rowspan="1"><p>url</p>
+</td><td colspan="1" rowspan="1"><p><a href="http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?BusStopCode=58499&SST=True" target="_blank">http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?BusStopCode=58499&amp;SST=True</a> </p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Header<br>AccountKey</p>
+</td><td colspan="1" rowspan="1"><p>&#34;r97sJqfU6IP6I3wHR49iDA==&#34;</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Header</p>
+<p>UniqueUserID</p>
+</td><td colspan="1" rowspan="1"><p>&#34;D11a7e9a-6fe7-4001-a1c1-ef7da7328966&#34;</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Header</p>
+<p>Accept</p>
+</td><td colspan="1" rowspan="1"><p>&#34;application/json&#34;</p>
+</td></tr>
+</table>
+<p>Key points to note:</p>
 <ol type="1" start="1">
-<li>Create workbook</li>
-<li>Get the worksheet</li>
-<li>Prepare the data in <em>list </em>data structure</li>
-<li>Iterate through the list, and update the cell value</li>
-<li>Save the workbook</li>
+<li>Setting up the webservices</li>
 </ol>
-<pre><code>import openpyxl
-
-#step 1
-workbook = openpyxl.Workbook()
-
-#step 2
-#get the default sheet
-sheet=workbook[&#34;Sheet&#34;]
-
-#step 3
-#create a list of tuples as data source
-data = [
-   [225.7,&#39;Gone with the Wind&#39;,&#39;Victor Fleming&#39;],
-   [194.4, &#39;Star Wars&#39;, &#39;George Lucas&#39;],
-   [161.0, &#39;ET: The Extraterrestrial&#39;, &#39;Steven Spielberg&#39;]
-]
-
-#step 4
-#fill up the row and col from the list data
-for i, statN in enumerate(data):
-   for j, item in enumerate(statN):
-       sheet.cell(row=i+1, column=j+1).value = item
-
-#this approach is easier for learning
-#not feasible if the list has many items
-&#39;&#39;&#39;   
-#update value into cell
-for row, (admissions,name, director) in enumerate(data,1):
-   sheet[&#39;A{}&#39;.format(row)].value = director
-   sheet[&#39;B{}&#39;.format(row)].value = name
-&#39;&#39;&#39;
-
-#step 5
-#save the spreadsheet
-workbook.save(&#34;test.xlsx&#34;)
-</code></pre>
-<p><strong>Use Case: Create Pivot Table</strong></p>
-<aside class="special"><p>Library required: pandas, numpy</p>
-<ul>
-<li><strong>Installation</strong>: pip install numpy pandas</li>
-</ul>
-<p>Useful resources: </p>
-<ul>
-<li><a href="https://pbpython.com/pandas-pivot-table-explained.html" target="_blank">https://pbpython.com/pandas-pivot-table-explained.html</a> </li>
-<li><a href="https://pbpython.com/pandas-pivot-report.html" target="_blank">https://pbpython.com/pandas-pivot-report.html</a></li>
-</ul>
-</aside>
-<p>This can be broken down into the following steps:</p>
 <ol type="1" start="1">
-<li>Load an Excel Spreadsheet into a <em>dataframe </em></li>
-<li>Use <strong>pivot_table()</strong> function to create <em>pivot table</em> from the dataframe</li>
-<li>Use <strong>xs()</strong> function to divide the pivot table into multiple section</li>
-<li>Save each segment of the dataframe into a separate sheet in the Excel file</li>
+<li>Need to choose the Headers/ Auth tab to enter the header information</li>
 </ol>
-<pre><code>import pandas as pd
-import numpy as np
+<ol type="1" start="1">
+<li>AccountKey, UniqueUserID and Accept</li>
+<li>Need to go to the Test Tab, and enter the actual values</li>
+</ol>
+<p class="image-container"><img style="width: 601.70px" src="img\8e4e87ac7714fcb2.png"></p>
+<ol type="1" start="2">
+<li>Using the Web Service</li>
+</ol>
+<ol type="1" start="1">
+<li>Need to go to the DataAction to enter the header information. </li>
+</ol>
+<p class="image-container"><img style="width: 447.50px" src="img\498444519f74729a.png"></p>
 
-# Excel file has 3 columns: school, year, score
-df = pd.read_excel(&#34;rp-quiz.xlsx&#34;)
 
-# Assuming that you are familiar with pivot table in excel
-# index refers to the row
-pvt = pd.pivot_table(df,index=[&#34;school&#34;, &#34;year&#34;], values=[&#34;score&#34;], 
-aggfunc=[np.mean,len], margins=False)
+      </google-codelab-step>
+    
+      <google-codelab-step label="Using Javascript Widget" duration="0">
+        <ol type="1" start="1">
+<li>Add a JavaScript widget to the Client Action (<img style="width: 47.50px" src="img\d17ce3a6bec88c4c.png">)</li>
+<li>Add Input or Output parameter to be used within JavaScript</li>
+</ol>
+<ul>
+<li>To access the input or output parameter, need to add the<strong> $parameters</strong> as prefix to the variable name. </li>
+</ul>
+<p class="image-container"><img style="width: 542.50px" src="img\4afdecb2397e5bf3.png"></p>
+<ol type="1" start="3">
+<li>Using the output parameter in other parts of the workflow. </li>
+</ol>
+<ul>
+<li>Note that <strong>JavaScript1 </strong>was the default name of the JavaScript widget. </li>
+</ul>
+<p class="image-container"><img style="width: 601.70px" src="img\700ec98044f4be88.png"></p>
 
-# get unique value for the index for each level
-print(pvt.index.get_level_values(0).unique()) # index level 0 is schools
-print(pvt.index.get_level_values(1).unique()) # index level 1 is year
 
-writer = pd.ExcelWriter(&#39;output.xlsx&#39;)
+      </google-codelab-step>
+    
+      <google-codelab-step label="SQL" duration="0">
+        <p>Group by Date in Aggregate (look at the fitness app)</p>
+<p><a href="https://www.outsystems.com/forums/discussion/47888/how-to-group-by-date-only-in-datetime-data-type-column-in-outsystem/" target="_blank">https://www.outsystems.com/forums/discussion/47888/how-to-group-by-date-only-in-datetime-data-type-column-in-outsystem/</a></p>
+<ul>
+<li>Create server action</li>
+<li>Need to create a structure for the return data</li>
+</ul>
+<p>Reference to the table needs curly braces {Entry}  ← using the entry table </p>
+<p>Reference to the table column needs  [] bracket <br></p>
+<p>A sample query statement<br>SELECT COUNT(*) FROM {Entry} WHERE {Entry}.[type] = <strong>0</strong></p>
+<p>Take note of the *</p>
+<p><strong>SELECT {Student}.* FROM {Student}</strong></p>
+<p><a href="https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Data/Query_Data/SQL_Queries#Write_your_own_SQL_query" target="_blank">https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Data/Query_Data/SQL_Queries#Write_your_own_SQL_query</a> </p>
+<p class="image-container"><img style="width: 601.70px" src="img\d204a2fde8b03a3.png"></p>
+<ul>
+<li>Use the input variable, may need to add a <strong>@</strong> in front</li>
+</ul>
+<p class="image-container"><img style="width: 423.28px" src="img\2819d6e46db247e7.png"></p>
+<h4 is-upgraded>Query Data documentation</h4>
+<p><a href="https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Data/Query_Data/Sort_Results_in_an_Aggregate" target="_blank">https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Data/Query_Data/Sort_Results_in_an_Aggregate</a> </p>
 
-# xs &lt;-- cross-section is for spliting a dataframe into sub-section
-for school in pvt.index.get_level_values(0).unique():
-   temp_df = pvt.xs(school, level=0)
-   temp_df.to_excel(writer,school) # 2nd argument is for the Excel Sheet
 
-writer.save()
-</code></pre>
+      </google-codelab-step>
+    
+      <google-codelab-step label="Ios app generation" duration="0">
+        <p>https://success.outsystems.com/Documentation/10/Delivering_Mobile_Apps/Generate_and_Distribute_Your_Mobile_App/More_Information_on_Generating_and_Distributing_Mobile_Apps</p>
+<p><a href="https://help.apple.com/developer-account/#/devbfa00fef7" target="_blank">https://help.apple.com/developer-account/#/devbfa00fef7</a></p>
+<p>Developer.apple.com</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Camera App" duration="0">
+        <p><a href="https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/Mobile_Plugins/Camera_Plugin?_gl=1*69lipn*_ga*NTQ1NTc2MzA1LjE2Mzc4MTIyOTY.*_ga_ZD4DTMHWR2*MTYzNzgxMjI5NS4xLjEuMTYzNzgxMjM3Ni41NQ.." target="_blank">Documentation</a></p>
+<ul>
+<li>Need to add the camera plugin</li>
+<li>Choose BinaryData for the Image, create a local variable for the binary image</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Images" duration="0">
+        <p>To reference images that are uploaded into the workspace. </p>
+<ul>
+<li>Take note that &#34;MyPlayGround&#34; is my project name</li>
+<li>android.png is the name of the image file</li>
+</ul>
+<p>&#34;/MyPlayGround/img/MyPlayGround.android.png&#34;</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Local Notification" duration="0">
+        <p><a href="https://www.outsystems.com/forums/discussion/20830/how-to-schedule-a-local-notification/" target="_blank">https://www.outsystems.com/forums/discussion/20830/how-to-schedule-a-local-notification/</a> </p>
+<ul>
+<li>Only works in the android app, not PWA</li>
+<li><img style="width: 165.00px" src="img\da1b303a75575841.png"></li>
+<li>Step 1: create a Local Variable MyNotification: LocalNotification</li>
+<li>Step 2: create a Local Vriable NotificationList: List of LocalNotificaiton</li>
+<li>Step 3: Create an event to start notification </li>
+<li>Step 4: within the OnClick event</li>
+<li>Assign MyNotification.id = 0 [a number to be used to cancel notification]</li>
+<li>Assign additional properties for MyNotification</li>
+</ul>
+<p class="image-container"><img style="width: 266.00px" src="img\14ecd49bfb0ef4b1.png"></p>
+<ul>
+<li>Step 5: Use the Run Client Action, select System -&gt; ListAppend to NotificationList</li>
+<li>Step 6: Drag the &#34;ScheduleNotifcation from the Logic tab</li>
+<li>Need to pass in the NotificationList</li>
+</ul>
+<p class="image-container"><img style="width: 270.00px" src="img\e65d950ac23f95fa.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Local Notification PWA version" duration="0">
+        <ul>
+<li>Did not manage to get the send pwa notification to work</li>
+<li>The available methods are in the Logic tab</li>
+</ul>
+<p><a href="https://whatwebcando.today/local-notifications.html" target="_blank">https://whatwebcando.today/local-notifications.html</a> </p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Notification" target="_blank">https://developer.mozilla.org/en-US/docs/Web/API/Notification</a> </p>
+<p><a href="https://notifications.spec.whatwg.org/" target="_blank">https://notifications.spec.whatwg.org/</a> </p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Barcode App" duration="0">
+        <p><a href="https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/Mobile_Plugins/Barcode_Plugin?_gl=1*hv002u*_ga*NzkzNTkyNjk3LjE2Mzg4NTczODY.*_ga_ZD4DTMHWR2*MTYzODg1NzM4Ni4xLjEuMTYzODg1NzcwMy40OQ" target="_blank">https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/Mobile_Plugins/Barcode_Plugin?_gl=1*hv002u*_ga*NzkzNTkyNjk3LjE2Mzg4NTczODY.*_ga_ZD4DTMHWR2*MTYzODg1NzM4Ni4xLjEuMTYzODg1NzcwMy40OQ</a>..  </p>
+<ul>
+<li>Need the barcode plugin</li>
+<li>Don&#39;t work with PWA</li>
+</ul>
+<p class="image-container"><img style="width: 419.18px" src="img\c448e42f59879c0.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Map" duration="0">
+        <ul>
+<li>Add map</li>
+<li>Add list to map</li>
+<li>Add marker to list</li>
+<li>The position is a string of lat, lon</li>
+</ul>
+<p>https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Mobile_and_Reactive_Patterns/Interaction/Map/How_to_use_the_Map_component</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Forge" duration="0">
+        <p><a href="https://www.outsystems.com/forge/" target="_blank">https://www.outsystems.com/forge/</a></p>
+<p class="image-container"><img style="width: 601.70px" src="img\24c4cab8f2c217e.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="iMask" duration="0">
+        <ul>
+<li>0 ← use</li>
+<li>1 ← wash</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Table Tennis Booking (TT Booking)" duration="0">
+        <p>Database Design</p>
+<ul>
+<li>Create <strong>Static Entity Data</strong> for the Player and the TableNumber</li>
+</ul>
+<p class="image-container"><img style="width: 187.99px" src="img\2cef052a5970a824.png"></p>
+<ul>
+<li>This screenshot shows the sample for the <strong>Player </strong>Static Entity</li>
+<li>Note: Id, Label, Order, Is_Active are added by default</li>
+</ul>
+<p>Booking Entity</p>
+<ul>
+<li>Add TableNumberId and PlayerId as foreign key </li>
+</ul>
+<p class="image-container"><img style="width: 207.54px" src="img\a6c6a246f98477f5.png"> </p>
+<p>AddBookingScreen</p>
+<ul>
+<li>Create an Empty Screen</li>
+<li>Add a Form to the empty screen</li>
+<li>Drag the Booking Entity into the form</li>
+<li>The following aggregate are automatically added as well</li>
+<li><img style="width: 177.39px" src="img\d5d7522d73a24bbf.png"></li>
+<li>Second Approach</li>
+<li>Add each item step by step to the form </li>
+<li>The most appropriate input widget will be selected</li>
+<li>For example, dragging the player ID to the form will create a dropdown dialog automatically. </li>
+</ul>
+<p>BookingListScreen</p>
+<ul>
+<li>Need to show the TableNumber and the Player Name from the Static Entity</li>
+<li>Therefore, need to add additional datasource to the aggregate</li>
+<li><img style="width: 253.00px" src="img\772e1050e2927205.png"></li>
+</ul>
+<p>Player Id: </p>
+<p class="image-container"><img style="width: 448.50px" src="img\27d761ac4d8a6a70.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="MyFitness App" duration="0">
+        <ul>
+<li>Grouping Data by Month</li>
+<li>Select Pushup: repetition: sum</li>
+</ul>
+<p class="image-container"><img style="width: 251.00px" src="img\74121f983254309.png"></p>
+<ul>
+<li>A column known as sum of repetition will be created</li>
+</ul>
+<p class="image-container"><img style="width: 415.50px" src="img\153b3f01f201c1a0.png"></p>
+<ul>
+<li>Create a column for month and a column for year</li>
+<li>Year → value: Year(Pushup.date)</li>
+<li>Month → value: Month(Pushup.date)</li>
+<li>Do a Group By month</li>
+</ul>
+<p class="image-container"><img style="width: 280.00px" src="img\2342e6f0ac163dc5.png"></p>
+<ul>
+<li>The Sum of Repetition will be grouped by month</li>
+</ul>
+<p class="image-container"><img style="width: 438.50px" src="img\9d0aa4c4cfe860b7.png"></p>
+<ul>
+<li>Repeat the steps for Group by Year</li>
+</ul>
+<p class="image-container"><img style="width: 495.50px" src="img\1d14ff63a1d86b2f.png"></p>
+<p>Take note of how to convert the month number to MMM under the list for MontlyHistoryScreen</p>
+<p>FormatDateTime(TextToDate(GetPushups.List.Current.year + &#34;-&#34;+ GetPushups.List.Current.month +&#34;-1&#34;),&#34;MMM yyyy&#34;)</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="MyPlayGround" duration="0">
+        <ul>
+<li>For the purpose of testing several features</li>
+</ul>
+<ol type="1" start="1">
+<li>CameraScreen</li>
+</ol>
+<ul>
+<li><a href="https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=1390&ProjectName=camera-plugin" target="_blank">https://www.outsystems.com/forge/Component_Documentation.aspx?ProjectId=1390&amp;ProjectName=camera-plugin</a> </li>
+<li>Use CameraPlugin</li>
+</ul>
+<ol type="1" start="2">
+<li>ChartScreen</li>
+</ol>
+<ol type="1" start="1">
+<li>Use Charts\ColumnChart</li>
+<li>Bind to a datasource</li>
+</ol>
+<ol type="1" start="1">
+<li>Need to add a aggregate to a screen first</li>
+<li>Has to define the Label and Value</li>
+<li>Take note of how JavaScript and JsONDeserialisation is used</li>
+<li>For JSONDeserialisation, need to define a structure for the JSON string to be converted into OutSystem objects</li>
+</ol>
+<table>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 286.00px" src="img\bfb5beb4e43bb38e.png"></p>
+</td><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 168.00px" src="img\22921d88bf12c10.png"></p>
+</td></tr>
+</table>
+<ol type="1" start="3">
+<li>CountScreen</li>
+</ol>
+<ul>
+<li>Use of OnReady event</li>
+<li>Use of Aggregate in the OnReady event workflow</li>
+<li>Can only access LocalStorage</li>
+</ul>
+<ol type="1" start="4">
+<li>HomeScreen</li>
+</ol>
+<ol type="1" start="1">
+<li>Buttons with links to a few other screens</li>
+</ol>
+<p><a href="https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Screen_Templates/Replace_the_sample_data_in_Screens_created_from_Screen_Templates?utm_source=ost-outsystems%20tools&utm_medium=ost-servicestudio&utm_campaign=ost-docrouter&utm_content=ost-helpid-30254&utm_term=ost-contextualhelp" target="_blank">https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Screen_Templates/Replace_the_sample_data_in_Screens_created_from_Screen_Templates?utm_source=ost-outsystems%20tools&amp;utm_medium=ost-servicestudio&amp;utm_campaign=ost-docrouter&amp;utm_content=ost-helpid-30254&amp;utm_term=ost-contextualhelp</a></p>
+<p><a href="https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Customize_the_look_of_your_app_with_Theme_Editor?utm_source=ost-outsystems%20tools&utm_medium=ost-servicestudio&utm_campaign=ost-docrouter&utm_content=ost-helpid-30255&utm_term=ost-contextualhelp" target="_blank">https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Customize_the_look_of_your_app_with_Theme_Editor?utm_source=ost-outsystems%20tools&amp;utm_medium=ost-servicestudio&amp;utm_campaign=ost-docrouter&amp;utm_content=ost-helpid-30255&amp;utm_term=ost-contextualhelp</a></p>
 
 
       </google-codelab-step>
     
       <google-codelab-step label="Learning Resources" duration="0">
-        <h4 is-upgraded>Practice Website</h4>
+        <h4 is-upgraded><a href="https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.outsystems.com%2Fevents%2Flow-code-school%2Fasia-pacific-1%2F&data=02%7C01%7Ctan_kok_cheng%40rp.edu.sg%7C7d5a72754c3545b9302508d85ba49c81%7Cf688b0d079f040a4864435fcdee9d0f3%7C1%7C0%7C637360110360649143&sdata=KFZX8rMmJyCb1S%2B8pxu3ydE8pVFSwVXNyNsLqhn4jY0%3D&reserved=0" target="_blank">low-code school</a></h4>
+<p>Next step <a href="https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgo2.outsystems.com%2FY0pB02BVm005G001VNP00W3&data=02%7C01%7Ctan_kok_cheng%40rp.edu.sg%7C861d246b592c4f1ea4ec08d85af090c5%7Cf688b0d079f040a4864435fcdee9d0f3%7C1%7C0%7C637359336565493309&sdata=jGNRNXsaE8EBOOqLTpSE4YjyNZhK4Au%2B477iO5gJfTE%3D&reserved=0" target="_blank">here</a></p>
 <table>
 <tr><td colspan="1" rowspan="1"><p>Description</p>
 </td><td colspan="1" rowspan="1"><p>URL</p>
@@ -175,11 +608,31 @@ writer.save()
 </td><td colspan="1" rowspan="1"><p><a href="http://beginpython.com" target="_blank">http://beginpython.com</a> </p>
 </td><td colspan="1" rowspan="1"><p>To learn basic concept of programming</p>
 </td></tr>
-<tr><td colspan="1" rowspan="1"><p>Pyschools </p>
-</td><td colspan="1" rowspan="1"><p><a href="https://pyschools.com" target="_blank">https://pyschools.com</a> </p>
-</td><td colspan="1" rowspan="1"><p>Extension of begin python website, with more advanced topics</p>
-</td></tr>
 </table>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Email" duration="0">
+        <p><a href="https://success.outsystems.com/Documentation/11/Developing_an_Application/Implement_Application_Logic/Send_an_Email_From_a_Web_Application?_gl=1*qw4fqt*_ga*MTk2MTc4Nzk3Ny4xNjM3ODg3MjY4*_ga_ZD4DTMHWR2*MTYzODA4MDY3MC4xLjEuMTYzODA4Mjg0OS40NQ.." target="_blank">Send an Email from web app</a></p>
+<p><a href="https://success.outsystems.com/Support/Personal_Environment/How-to_send_emails_from_your_personal_environment?_gl=1*10lremi*_ga*MTk2MTc4Nzk3Ny4xNjM3ODg3MjY4*_ga_ZD4DTMHWR2*MTYzODA4MDY3MC4xLjEuMTYzODA4Mjg0OS40NQ.." target="_blank">How to send email from personal environment</a></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="RP Outsystems" duration="0">
+        <p><a href="https://lcsdev.rp.edu.sg/Users/" target="_blank">https://lcsdev.rp.edu.sg/Users/</a> </p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Link" duration="0">
+        <h4 is-upgraded>Preview url</h4>
+<p><a href="https://personal-lvauwtnm.outsystemscloud.com/PreviewInDevices/?IsMobilePreview=True&DeviceName=Smartphone&URL=/GRIT/HomeScreen?_ts=637745551409186288" target="_blank">https://personal-lvauwtnm.outsystemscloud.com/PreviewInDevices/?IsMobilePreview=True&amp;DeviceName=Smartphone&amp;URL=/GRIT</a></p>
+<p><a href="https://personal-lvauwtnm.outsystemscloud.com/PreviewInDevices/?IsMobilePreview=True&DeviceName=Smartphone&URL=/GRIT/HomeScreen?_ts=637745551409186288" target="_blank">https://kokcheng.outsystemscloud.com/PreviewInDevices/?IsMobilePreview=True&amp;DeviceName=Smartphone&amp;URL=/</a>ExerciseApp </p>
+<h4 is-upgraded>User url</h4>
+<p>https://&lt;personal_environment&gt;.outsystemscloud.com/Users </p>
+<p><a href="https://personal-lvauwtnm.outsystemscloud.com/Users" target="_blank">https://personal-lvauwtnm.outsystemscloud.com/Users</a> </p>
 
 
       </google-codelab-step>
